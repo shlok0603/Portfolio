@@ -41,8 +41,6 @@
       background-color: #FAFAFA;
       color: #121212;
       overflow-x: clip;
-      selection-background-color: #000;
-      selection-color: #fff;
     }
 
     ::selection {
@@ -58,9 +56,6 @@
       scrollbar-width: none;
     }
 
-    /* ============================================================
-       EXPERIENCE HORIZONTAL SPATIAL CANVAS
-       ============================================================ */
     #exp-horizontal-stage {
       will-change: transform;
       transform: translate3d(0, 0, 0);
@@ -70,36 +65,6 @@
     }
     .exp-date-bg {
       will-change: transform;
-    }
-    @keyframes expLivingFlow {
-      0% { transform: translateX(-100%); }
-      100% { transform: translateX(100%); }
-    }
-    .exp-living-flow {
-      animation: expLivingFlow 4.5s ease-in-out infinite;
-    }
-    @media (prefers-reduced-motion: reduce) {
-      #experience {
-        height: auto !important;
-      }
-      #exp-sticky-viewport {
-        position: relative !important;
-        height: auto !important;
-        overflow: visible !important;
-      }
-      #exp-horizontal-stage {
-        flex-direction: column !important;
-        width: 100% !important;
-        transform: none !important;
-      }
-      .exp-panel {
-        width: 100% !important;
-        padding-top: 5rem !important;
-        padding-bottom: 5rem !important;
-      }
-      .exp-living-flow {
-        animation: none !important;
-      }
     }
 
     #project-modal {
@@ -111,9 +76,6 @@
       transform: translate3d(0, 0, 0);
     }
 
-    /* ============================================================
-       EDITORIAL HERO TITLE
-       ============================================================ */
     .metallic-title {
       display: inline-block;
       background: linear-gradient(180deg, #1A1A1A 0%, #4A4A4A 35%, #8E8E8E 60%, #BDBDBD 85%, #E5E5E5 100%);
@@ -134,10 +96,6 @@
     }
     .footer-metallic-title:hover {
       filter: brightness(1.2);
-    }
-
-    .letter-spacing-widest {
-      letter-spacing: 0.18em;
     }
 
     .circle-btn {
@@ -174,7 +132,6 @@
 
   <!-- BEGIN: Navigation Header -->
   <header class="relative z-40 bg-[#FAFAFA] transition-all duration-300 w-full pt-6 pb-4 px-6 md:px-14 max-w-[1400px] mx-auto flex items-center justify-between" data-purpose="site-navigation">
-    <!-- Brand Wordmark -->
     <a class="group font-extrabold text-xl tracking-tight text-black flex items-center" href="#home">
       <span>SHLOK</span>
       <span class="inline-block w-2 h-2 bg-black rounded-full ml-1 transition-transform group-hover:scale-150 duration-200"></span>
@@ -189,14 +146,14 @@
       <a id="nav-services" class="nav-link px-4 py-2 rounded-full border border-transparent hover:border-neutral-200 hover:text-black transition whitespace-nowrap" href="#services">WHAT I BUILD</a>
     </nav>
 
-    <!-- Right Social & Menu Links -->
+    <!-- Right Social & Email Links -->
     <div class="flex items-center gap-1.5 md:gap-2 p-1.5 bg-white/95 border border-[#E2E2E2] rounded-full shadow-sm">
-      <!-- LinkedIn -->
+      <a class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-neutral-100 transition text-neutral-700 hover:text-black" href="mailto:shlok.nandwana@gmail.com" title="Email Shlok">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+      </a>
       <a class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-neutral-100 transition text-neutral-700 hover:text-black" href="https://www.linkedin.com/in/shlok-n" target="_blank" rel="noopener" title="LinkedIn">
         <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
       </a>
-
-      <!-- GitHub -->
       <a class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-neutral-100 transition text-neutral-700 hover:text-black" href="https://github.com/shlok0603" target="_blank" rel="noopener" title="GitHub">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
       </a>
@@ -214,9 +171,7 @@
       <div>
         <div class="flex items-center justify-between pb-6 border-b border-neutral-200">
           <span class="font-extrabold text-lg tracking-tight">SHLOK•</span>
-          <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700 hover:border-black">
-            ✕
-          </button>
+          <button onclick="toggleMobileMenu()" class="w-8 h-8 rounded-full border border-neutral-300 flex items-center justify-center text-neutral-700 hover:border-black">✕</button>
         </div>
         <nav class="flex flex-col gap-4 mt-8 text-base font-bold tracking-wider">
           <a onclick="toggleMobileMenu()" href="#home" class="py-2 border-b border-neutral-100 hover:text-neutral-500">HOME</a>
@@ -239,12 +194,8 @@
   <main class="relative max-w-[1400px] mx-auto px-6 md:px-14 pt-6 md:pt-12 pb-20 overflow-hidden" data-purpose="hero-section" id="home">
     <div class="text-center w-full mb-6 md:mb-10 relative z-0 select-none">
       <h1 id="hero-title" class="text-[9.5vw] md:text-[8rem] lg:text-[9.5rem] font-extrabold uppercase leading-[0.85] tracking-tight">
-        <span class="block">
-          <span class="text-[#121212]">SHLOK</span>
-        </span>
-        <span class="block">
-          <span class="metallic-title">NANDWANA</span>
-        </span>
+        <span class="block"><span class="text-[#121212]">SHLOK</span></span>
+        <span class="block"><span class="metallic-title">NANDWANA</span></span>
       </h1>
     </div>
 
@@ -254,9 +205,7 @@
       <div class="md:col-span-3 flex flex-col items-start pl-2 md:pl-6 order-2 md:order-1 pt-6 md:pt-0">
         <span class="text-xs font-bold tracking-wider uppercase text-neutral-800 mb-6">B.TECH IT &bull; SKIT</span>
         <a class="circle-btn w-14 h-14 md:w-16 md:h-16 border-neutral-300" href="#about" aria-label="Scroll to About Section">
-          <svg class="w-5 h-5 text-neutral-800 transform rotate-45" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-            <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
+          <svg class="w-5 h-5 text-neutral-800 transform rotate-45" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </a>
       </div>
 
@@ -311,18 +260,10 @@
             <div class="relative w-full h-full overflow-hidden rounded-xl flex items-center justify-center bg-[#07090E]">
               <img
                 id="sem-media-img"
-                src="assets/about_floating_light_hq.png?v=14"
+                src="assets/hero_portrait_Hello.png"
                 alt="Shlok Nandwana"
                 class="w-full h-full object-cover rounded-xl transition-none"
                 style="transform: scale(1.02) translateZ(0); transform-origin: center; backface-visibility: hidden;"
-              />
-              <img
-                id="sem-media-blur"
-                src="assets/about_floating_light_hq.png?v=14"
-                alt=""
-                aria-hidden="true"
-                class="absolute inset-0 w-full h-full object-cover rounded-xl transition-none pointer-events-none"
-                style="filter: blur(18px); transform: scale(1.08) translateZ(0); transform-origin: center; opacity: 1; will-change: opacity; backface-visibility: hidden;"
               />
               <div id="sem-media-overlay" class="absolute inset-0 bg-gradient-to-b from-black/75 via-transparent to-black/85 rounded-xl transition-opacity duration-150 pointer-events-none"></div>
 
@@ -332,7 +273,7 @@
               >
                 <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-white/10 pb-3">
                   <h3 class="text-xs sm:text-sm md:text-base font-extrabold uppercase tracking-tight text-white max-w-xl">
-                    TAKING AI MODELS FROM RESEARCH TO HIGH-PERFORMANCE PRODUCTION
+                    AI/ML ENGINEER &bull; B.TECH IT AT SKIT JAIPUR
                   </h3>
                   <span class="text-[10px] font-mono tracking-wider uppercase text-neutral-400 shrink-0">
                     BENGALURU &bull; JAIPUR
@@ -344,24 +285,21 @@
                 <div class="pt-3 border-t border-white/10 flex flex-col md:flex-row md:items-end justify-between gap-4">
                   <div class="max-w-xl space-y-2">
                     <div class="flex items-center gap-2.5">
-                      <span class="text-[10px] font-bold tracking-widest uppercase text-neutral-300">CORE EXPERTISE</span>
+                      <span class="text-[10px] font-bold tracking-widest uppercase text-neutral-300">BIOGRAPHY &amp; FOCUS</span>
                       <div class="h-px bg-white/15 w-6"></div>
-                      <span class="text-[10px] font-mono tracking-widest uppercase text-neutral-400">PYTHON &bull; PYTORCH &bull; HUGGING FACE &bull; AZURE</span>
+                      <span class="text-[10px] font-mono tracking-widest uppercase text-neutral-400">PYTHON &bull; PYTORCH &bull; AZURE</span>
                     </div>
                     <p class="text-xs sm:text-[12px] font-medium leading-relaxed tracking-wider uppercase text-neutral-300">
-                      SPECIALIZING IN COMPUTER VISION, RAG SYSTEMS, AND FINETUNED SLMS WITH MEASURED GAINS IN ACCURACY, REDUCED LATENCY, AND MINIMIZED MANUAL EFFORT ACROSS ENTERPRISE DEPLOYMENTS.
+                      I specialize in taking machine learning models from research to high-performance production. With hands-on experience at BigHaat India and Jabit Soft building computer vision pipelines, LLM fine-tuning, and multimodal RAG systems, I bridge the gap between complex research architectures and scalable enterprise solutions.
                     </p>
                   </div>
 
                   <div class="flex items-center gap-3 shrink-0 pt-1 md:pt-0">
-                    <a href="javascript:void(0)" onclick="openContactModal()" class="pointer-events-auto px-5 py-2.5 rounded-full bg-white text-black hover:bg-neutral-200 text-xs font-bold tracking-wider uppercase transition-all duration-200 inline-flex items-center gap-2">
-                      <span>GET IN TOUCH</span>
-                      <svg class="w-3.5 h-3.5 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg>
+                    <a href="mailto:shlok.nandwana@gmail.com" class="pointer-events-auto px-5 py-2.5 rounded-full bg-white text-black hover:bg-neutral-200 text-xs font-bold tracking-wider uppercase transition-all duration-200 inline-flex items-center gap-2">
+                      <span>EMAIL ME</span>
                     </a>
-                    <a href="#services" class="pointer-events-auto px-5 py-2.5 rounded-full border border-neutral-500 hover:border-white text-white text-xs font-bold tracking-wider uppercase transition-all duration-200">
-                      WHAT I BUILD
+                    <a href="javascript:void(0)" onclick="openContactModal()" class="pointer-events-auto px-5 py-2.5 rounded-full border border-neutral-500 hover:border-white text-white text-xs font-bold tracking-wider uppercase transition-all duration-200">
+                      GET IN TOUCH
                     </a>
                   </div>
                 </div>
@@ -651,7 +589,7 @@
         </div>
         <div class="accordion-content">
           <p class="text-xs text-neutral-300 leading-relaxed max-w-2xl mb-4">
-            Containerizing AI models with Docker, orchestrating training pipelines on Microsoft Azure, and building automated CI/CD workflows for robust machine learning deployments.
+            Containerizing AI models with Docker, orchestrating training pipelines on Microsoft Azure, and building automated workflows for robust machine learning deployments.
           </p>
           <div class="flex items-center justify-between border-t border-neutral-800 pt-3">
             <span class="text-[11px] font-mono text-neutral-400">STACK: PYTHON, DOCKER, AZURE, PYTORCH</span>
@@ -674,6 +612,9 @@
       </div>
 
       <div class="flex flex-wrap items-center justify-center gap-3.5 mt-8 mb-20">
+        <a class="px-6 py-2.5 rounded-full border border-neutral-700 hover:border-neutral-400 text-xs font-medium tracking-wider uppercase transition text-neutral-300 hover:text-white" href="mailto:shlok.nandwana@gmail.com">
+          EMAIL ME
+        </a>
         <a class="px-6 py-2.5 rounded-full border border-neutral-700 hover:border-neutral-400 text-xs font-medium tracking-wider uppercase transition text-neutral-300 hover:text-white" href="https://www.linkedin.com/in/shlok-n" target="_blank" rel="noopener">
           LINKEDIN
         </a>
@@ -719,11 +660,11 @@
       <form id="contact-form" onsubmit="submitContactForm(event)" class="space-y-4">
         <div>
           <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1">Your Name</label>
-          <input type="text" id="contact-name" required placeholder="John Doe" class="w-full px-4 py-2.5 rounded-xl border border-neutral-300 focus:outline-none focus:border-black text-sm">
+          <input type="text" id="contact-name" required placeholder="Recruiter Name" class="w-full px-4 py-2.5 rounded-xl border border-neutral-300 focus:outline-none focus:border-black text-sm">
         </div>
         <div>
           <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1">Email Address</label>
-          <input type="email" id="contact-email" required placeholder="john@company.com" class="w-full px-4 py-2.5 rounded-xl border border-neutral-300 focus:outline-none focus:border-black text-sm">
+          <input type="email" id="contact-email" required placeholder="recruiter@company.com" class="w-full px-4 py-2.5 rounded-xl border border-neutral-300 focus:outline-none focus:border-black text-sm">
         </div>
         <div>
           <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1">Role / Project Area</label>
@@ -736,7 +677,7 @@
         </div>
         <div>
           <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1">Message</label>
-          <textarea id="contact-message" rows="3" required placeholder="Tell me about your AI project, dataset, or goals..." class="w-full px-4 py-2 rounded-xl border border-neutral-300 focus:outline-none focus:border-black text-sm"></textarea>
+          <textarea id="contact-message" rows="3" required placeholder="Tell me about the opportunity or project..." class="w-full px-4 py-2 rounded-xl border border-neutral-300 focus:outline-none focus:border-black text-sm"></textarea>
         </div>
         <button type="submit" class="w-full py-3 bg-black text-white rounded-xl text-xs font-bold tracking-widest uppercase hover:bg-neutral-800 transition">
           SEND MESSAGE
@@ -996,9 +937,8 @@
         id: 'retinopathy',
         title: 'Diabetic Retinopathy Detection',
         subtitle: 'Project Lead & Computer Vision',
-        description: 'Tackled slow manual screening by automating 5-class diabetic retinopathy severity grading...',
-        // CHANGE THIS PATH to your new image
-        src: 'assets/Healthy.png', 
+        description: 'Tackled slow manual screening by automating 5-class diabetic retinopathy severity grading from retinal images on the APTOS 2019 dataset using a hybrid Swin Transformer, EfficientNet-B4, and ResNet50 ensemble.',
+        src: 'assets/Healthy.png',
         tools: ['PyTorch', 'Swin Transformer', 'EfficientNet', 'OpenCV'],
         stats: 'Achieved 0.92 Quadratic Weighted Kappa (QWK) on APTOS 2019.'
       },
@@ -1006,9 +946,8 @@
         id: 'ragplatform',
         title: 'Enterprise Multi-Modal RAG Platform',
         subtitle: 'Project Lead & AI Architecture',
-        description: 'Engineered a multimodal platform for PDF ingestion and retrieval...',
-        // CHANGE THIS PATH to your new image
-        src: 'assets/rag_.png', 
+        description: 'Engineered a multimodal platform for PDF ingestion and retrieval across text and visual content using LangChain, LlamaIndex, CLIP embeddings, and FAISS vector search.',
+        src: 'assets/rag_.png',
         tools: ['LangChain', 'LlamaIndex', 'CLIP', 'FAISS'],
         stats: 'Reduced search latency by 35% and sped up discovery by 50%.'
       }
