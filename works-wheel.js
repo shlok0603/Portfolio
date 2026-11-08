@@ -35,70 +35,26 @@ function place(ringDeg, drumDeg, ringR, drumR, bow, m) {
 
 export const DEFAULT_WORKS = [
   {
-    title: "Aether AI",
-    subtitle: "Cognitive Workspace & Deep Reasoning",
-    description: "A cognitive workspace engineered for deep systemic research, disciplined reasoning, and structural synthesis with real-time active node synthesis.",
-    image: "Landing Page Assest/Screenshot 2026-10-20 at 7.46.25\u202fPM.png",
-    src: "Landing Page Assest/Screenshot 2026-10-20 at 7.46.25\u202fPM.png",
-    href: "#aether-ai",
-    stats: "Active Node Engine • Systemic Synthesis • Structural Research",
-    tools: ["React", "TypeScript", "Tailwind CSS", "AI Engine"],
-    deliverables: ["Cognitive Workspace UI", "Active Node Telemetry", "Interactive Reasoning Canvas"]
+    title: "Diabetic Retinopathy Detection",
+    subtitle: "5-Class Severity Grading",
+    description: "APTOS 2019 retinal image grading using a hybrid Swin Transformer, EfficientNet-B4, and ResNet50 ensemble.",
+    image: "assets/solar_app_bg.png",
+    src: "assets/solar_app_bg.png",
+    href: "#retinopathy",
+    stats: "0.92 Quadratic Weighted Kappa (QWK)",
+    tools: ["Python", "PyTorch", "Hugging Face"],
+    deliverables: ["Hybrid Vision Ensemble", "5-Class Severity Grading", "APTOS 2019 Evaluation"]
   },
   {
-    title: "Aether Protocol",
-    subtitle: "Private Preview & Monolithic Deployment",
-    description: "Exclusive onboarding portal and architectural briefing interface engineered for research scientists, architectural principals, and technical executives.",
-    image: "Landing Page Assest/Screenshot 2026-10-20 at 7.46.43\u202fPM.png",
-    src: "Landing Page Assest/Screenshot 2026-10-20 at 7.46.43\u202fPM.png",
-    href: "#aether-protocol",
-    stats: "Version 4.5.2 • Monolithic Core Stability • Immediate Deployment",
-    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Figma"],
-    deliverables: ["Briefing Reservation Portal", "Monolithic Design System", "Executive Onboarding Flow"]
-  },
-  {
-    title: "Afterform S01",
-    subtitle: "Brutalist Campaign & Visual Monograph",
-    description: "A seasonal fashion campaign and visual monograph capturing structural streetwear silhouettes framed against raw monolithic concrete architecture.",
-    image: "Landing Page Assest/Screenshot 2026-10-20 at 7.45.28\u202fPM.png",
-    src: "Landing Page Assest/Screenshot 2026-10-20 at 7.45.28\u202fPM.png",
-    href: "#afterform-s01",
-    stats: "Campaign S01 • Frame Ref: 35mm_Exp_09 • Visual Monograph",
-    tools: ["Next.js", "Tailwind CSS", "Figma", "Lenis Scroll"],
-    deliverables: ["Visual Monograph Experience", "High-Resolution Lookbook", "Seasonal Campaign Direction"]
-  },
-  {
-    title: "Afterform System",
-    subtitle: "Brutalist Apparel & Brand Manifesto",
-    description: "A monolithic architectural apparel manifesto stripping garments of emblems and logos, focusing on pure volume, silhouette, and human-concrete alignment.",
-    image: "Landing Page Assest/Screenshot 2026-10-20 at 7.45.46\u202fPM.png",
-    src: "Landing Page Assest/Screenshot 2026-10-20 at 7.45.46\u202fPM.png",
-    href: "#afterform-system",
-    stats: "Tokyo Studio • Berlin Lab • Seoul Showroom",
-    tools: ["React", "Tailwind CSS", "Figma", "GSAP"],
-    deliverables: ["Brand Manifesto Landing Page", "Brutalist Lookbook System", "E-Commerce Catalog Layout"]
-  },
-  {
-    title: "Maison Éléara",
-    subtitle: "Fine Jewellery & Parisian Atelier",
-    description: "An haute jewellery boutique celebrating sculpted contours in heavy fairmined gold born from geological stillness, crafted in Paris Place Vendôme.",
-    image: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.03\u202fPM.png",
-    src: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.03\u202fPM.png",
-    href: "#maison-eleara",
-    stats: "Place Vendôme Atelier • 18k Recycled Gold • Aurelia Torc & Drops",
-    tools: ["Figma", "React", "Tailwind CSS", "High-Precision Typography"],
-    deliverables: ["Fine Jewellery Boutique", "Atelier Concierge Interface", "Artisanal Archive Showcase"]
-  },
-  {
-    title: "Éléara Campaign",
-    subtitle: "Campaign Edition Vol. IX — Sandstone Edit",
-    description: "An organic editorial campaign highlighting sculpted gold signet jewellery set against raw geological sandstone formations, with private salon concierge booking.",
-    image: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.42\u202fPM.png",
-    src: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.42\u202fPM.png",
-    href: "#eleara-campaign",
-    stats: "Campaign Edition Vol. IX • Sandstone Geology • Atelier Concierge",
-    tools: ["WebGL", "Three.js", "Tailwind CSS", "Smooth Scroll"],
-    deliverables: ["Campaign Lookbook Experience", "Private Salon Reservation Portal", "Sensory Art Direction"]
+    title: "Enterprise Multi-Modal RAG Platform",
+    subtitle: "Multimodal PDF Ingestion & Retrieval",
+    description: "Multimodal PDF ingestion and retrieval using LangChain, LlamaIndex, CLIP embeddings, and FAISS vector search.",
+    image: "assets/about_media.jpg",
+    src: "assets/about_media.jpg",
+    href: "#ragplatform",
+    stats: "35% search latency reduction",
+    tools: ["Python", "LangChain", "FAISS"],
+    deliverables: ["Multimodal PDF Ingestion", "CLIP Embeddings", "Enterprise Retrieval"]
   }
 ];
 

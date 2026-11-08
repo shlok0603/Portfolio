@@ -1,4 +1,4 @@
-# ECHO — Editorial Developer & Designer Portfolio
+# ECHO — AI/ML Engineer Portfolio
 
 <div align="center">
 
@@ -11,7 +11,7 @@
   </p>
 
   <p align="center">
-    Crafted by <strong><a href="https://github.com/Jishnu09-siuu">Jishnu Mondal</a></strong> — Designer & Full-Stack Creative Developer.
+    Crafted by <strong><a href="https://github.com/Jishnu09-siuu">Jishnu Mondal</a></strong> — AI/ML Engineer.
   </p>
 
 </div>
@@ -20,7 +20,7 @@
 
 ## ✦ Overview
 
-**ECHO** is an editorial developer and designer portfolio engineered with a focus on typography, fluid physics, and cutting-edge web graphics. Built around a curated monochrome aesthetic, it marries brutalist minimalism with rich micro-interactions, hardware-accelerated scroll animations, and interactive 3D drum reel navigation.
+**ECHO** is an editorial AI/ML engineering portfolio engineered with a focus on typography, fluid physics, and cutting-edge web graphics. Built around a curated monochrome aesthetic, it marries brutalist minimalism with rich micro-interactions, hardware-accelerated scroll animations, and interactive project navigation.
 
 Whether presenting production landing pages, full-stack applications, or bespoke brand identities, ECHO provides an immersive editorial reading and browsing experience.
 
@@ -77,15 +77,10 @@ Whether presenting production landing pages, full-stack applications, or bespoke
 
 ## ✦ Featured Projects
 
-The portfolio indexes a curated roster of production web applications, landing pages, and client systems:
+The portfolio highlights two personal/lead projects:
 
-- **Aether AI**: Cognitive workspace engineered for deep systemic research and reasoning canvas telemetry.
-- **Aether Protocol**: Monolithic preview portal and executive onboarding architectural briefing flow.
-- **Afterform S01**: Minimalist architectural lookbook and editorial digital showcase.
-- **Cafe Website (Mocha & Miso)**: Full-stack cafe management system with order processing and real-time reservation portal.
-- **Design Studio**: Bold creative agency identity website with fluid layout systems.
-- **Julian Vance Photography**: Analog & editorial photography archive showcasing visual storytelling.
-- **Sen Cruzo Client Portfolio**: Luxury architectural client presentation portfolio with custom typography.
+- **Diabetic Retinopathy Detection**: 5-class severity grading on APTOS 2019 using a hybrid Swin Transformer, EfficientNet-B4, and ResNet50 ensemble achieving 0.92 QWK.
+- **Enterprise Multi-Modal RAG Platform**: Multimodal PDF ingestion and retrieval using LangChain, LlamaIndex, CLIP embeddings, and FAISS vector search, reducing search latency by 35%.
 
 ---
 
@@ -125,7 +120,7 @@ cd ECHO-WEBSITE
 # Run local development server
 npm start
 # or directly:
-python3 -m http.server 8080
+python -m http.server 8080
 ```
 Then navigate to `http://localhost:8080` in your browser.
 

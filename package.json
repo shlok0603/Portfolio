@@ -2,11 +2,11 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Monochrome Editorial Developer & Designer Portfolio",
+  "description": "AI/ML Engineer portfolio focused on computer vision, RAG systems, and production machine learning",
   "type": "module",
   "scripts": {
-    "dev": "python3 -m http.server 8080",
-    "start": "python3 -m http.server 8080"
+    "dev": "python -m http.server 8080",
+    "start": "python -m http.server 8080"
   },
   "dependencies": {
     "@fiddle-digital/string-tune": "^1.2.0"

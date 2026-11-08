@@ -186,7 +186,7 @@
       <a id="nav-about" class="nav-link px-4 py-2 rounded-full border border-transparent hover:border-neutral-200 hover:text-black transition whitespace-nowrap" href="#about">ABOUT ME</a>
       <a id="nav-experience" class="nav-link px-4 py-2 rounded-full border border-transparent hover:border-neutral-200 hover:text-black transition whitespace-nowrap" href="#experience">EXPERIENCE</a>
       <a id="nav-projects" class="nav-link px-4 py-2 rounded-full border border-transparent hover:border-neutral-200 hover:text-black transition whitespace-nowrap" href="#projects">PROJECTS</a>
-      <a id="nav-services" class="nav-link px-4 py-2 rounded-full border border-transparent hover:border-neutral-200 hover:text-black transition whitespace-nowrap" href="#services">SERVICES</a>
+      <a id="nav-services" class="nav-link px-4 py-2 rounded-full border border-transparent hover:border-neutral-200 hover:text-black transition whitespace-nowrap" href="#services">WHAT I BUILD</a>
     </nav>
 
     <!-- Right Social & Menu Links -->
@@ -223,7 +223,7 @@
           <a onclick="toggleMobileMenu()" href="#about" class="py-2 border-b border-neutral-100 hover:text-neutral-500">ABOUT ME</a>
           <a onclick="toggleMobileMenu()" href="#experience" class="py-2 border-b border-neutral-100 hover:text-neutral-500">EXPERIENCE</a>
           <a onclick="toggleMobileMenu()" href="#projects" class="py-2 border-b border-neutral-100 hover:text-neutral-500">PROJECTS</a>
-          <a onclick="toggleMobileMenu()" href="#services" class="py-2 border-b border-neutral-100 hover:text-neutral-500">SERVICES</a>
+          <a onclick="toggleMobileMenu()" href="#services" class="py-2 border-b border-neutral-100 hover:text-neutral-500">WHAT I BUILD</a>
           <a onclick="toggleMobileMenu(); openContactModal();" href="javascript:void(0)" class="py-2 text-black hover:underline">CONTACT</a>
         </nav>
       </div>
@@ -261,8 +261,8 @@
       </div>
 
       <!-- Center Column: Headshot -->
-      <div class="md:col-span-6 flex justify-center order-1 md:order-2 relative z-10 -mt-16 md:-mt-36">
-        <div class="relative w-[320px] h-[400px] md:w-[480px] md:h-[580px] flex items-end justify-center hero-portrait-mask">
+      <div class="md:col-span-6 flex justify-center order-1 md:order-2 relative z-10 mt-2 md:mt-0">
+        <div class="relative w-[300px] h-[360px] md:w-[460px] md:h-[540px] flex items-end justify-center hero-portrait-mask">
           <img src="assets/hero_portrait_Hello.png" 
                alt="Shlok Nandwana — AI/ML Engineer" 
                class="w-full h-full object-contain object-bottom pointer-events-none select-none transition-transform duration-700 hover:scale-[1.02]"
@@ -361,7 +361,7 @@
                       </svg>
                     </a>
                     <a href="#services" class="pointer-events-auto px-5 py-2.5 rounded-full border border-neutral-500 hover:border-white text-white text-xs font-bold tracking-wider uppercase transition-all duration-200">
-                      SERVICES
+                      WHAT I BUILD
                     </a>
                   </div>
                 </div>
@@ -460,7 +460,7 @@
                 DATA SCIENCE<br>INTERN
               </h3>
               <p class="text-sm sm:text-base md:text-lg text-neutral-300 leading-relaxed max-w-2xl mb-8">
-                Trained CNNs and fine-tuned Vision Transformers for Crop Doctor disease classification on 1.25M+ images (+6% accuracy). Built MLOps pipelines using Docker and Azure ML notebooks, cutting training time from 6h to 2h.
+                Trained CNNs and fine-tuned Vision Transformers for crop disease classification on 1.25M+ images (+6% accuracy). Built MLOps pipelines using Docker and Azure ML notebooks, cutting retraining time from 6 hours to 2 hours.
               </p>
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-white/10 max-w-3xl mb-8">
                 <div>
@@ -469,7 +469,7 @@
                 </div>
                 <div>
                   <div class="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-1.5">MLOPS & CLOUD</div>
-                  <div class="text-xs sm:text-sm text-neutral-200 font-medium leading-snug">Azure ML notebooks & Docker pipelines (+300% training speed)</div>
+                  <div class="text-xs sm:text-sm text-neutral-200 font-medium leading-snug">Azure ML notebooks & Docker pipelines (6 hours to 2 hours)</div>
                 </div>
                 <div>
                   <div class="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-1.5">NLP & ANALYTICS</div>
@@ -581,11 +581,21 @@
   <section class="max-w-[1400px] mx-auto px-6 md:px-14 py-20" data-purpose="services-section" id="services">
     <div class="text-center max-w-2xl mx-auto mb-14">
       <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-neutral-900 mb-4">
-        AI &amp; SOFTWARE ENGINEERING SERVICES
+        WHAT I BUILD
       </h2>
       <p class="text-xs md:text-xs uppercase font-medium leading-relaxed tracking-wider text-neutral-500">
-        ENGINEERING PRODUCTION-GRADE COMPUTER VISION PIPELINES, MULTIMODAL RAG SYSTEMS, AND HIGH-PERFORMANCE MLOPS INFRASTRUCTURE.
+        BUILDING PRODUCTION-GRADE AI/ML SYSTEMS ACROSS COMPUTER VISION, DATA SCIENCE, AND MULTIMODAL RAG ENGINEERING.
       </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-2 mb-10" aria-label="Core technology stack">
+      <span class="px-3 py-1.5 rounded-full border border-neutral-300 bg-white text-[10px] font-semibold tracking-wider uppercase">Python</span>
+      <span class="px-3 py-1.5 rounded-full border border-neutral-300 bg-white text-[10px] font-semibold tracking-wider uppercase">PyTorch</span>
+      <span class="px-3 py-1.5 rounded-full border border-neutral-300 bg-white text-[10px] font-semibold tracking-wider uppercase">Hugging Face</span>
+      <span class="px-3 py-1.5 rounded-full border border-neutral-300 bg-white text-[10px] font-semibold tracking-wider uppercase">LangChain</span>
+      <span class="px-3 py-1.5 rounded-full border border-neutral-300 bg-white text-[10px] font-semibold tracking-wider uppercase">FAISS</span>
+      <span class="px-3 py-1.5 rounded-full border border-neutral-300 bg-white text-[10px] font-semibold tracking-wider uppercase">Docker</span>
+      <span class="px-3 py-1.5 rounded-full border border-neutral-300 bg-white text-[10px] font-semibold tracking-wider uppercase">Azure</span>
     </div>
 
     <div class="max-w-4xl mx-auto flex flex-col space-y-3.5">
@@ -604,8 +614,8 @@
             Building custom CNNs, Vision Transformers, and hybrid ensembles for medical imaging, agricultural diagnostics, and semantic visual search with optimized accuracy.
           </p>
           <div class="flex items-center justify-between border-t border-neutral-200 pt-3">
-            <span class="text-[11px] font-mono text-neutral-400">STACK: PYTORCH, OPENCV, HUGGING FACE, EFFICIENTNET</span>
-            <button onclick="event.stopPropagation(); bookSpecificService('Computer Vision');" class="text-xs font-bold underline hover:text-neutral-600">INQUIRE ↗</button>
+            <span class="text-[11px] font-mono text-neutral-400">STACK: PYTHON, PYTORCH, HUGGING FACE</span>
+            <button onclick="event.stopPropagation(); bookSpecificService('Computer Vision');" class="text-xs font-bold underline hover:text-neutral-600">VIEW FOCUS ↗</button>
           </div>
         </div>
       </div>
@@ -624,8 +634,8 @@
             Developing enterprise-grade knowledge extraction platforms using LangChain, LlamaIndex, CLIP embeddings, and FAISS vector search across text and visual documents.
           </p>
           <div class="flex items-center justify-between border-t border-neutral-200 pt-3">
-            <span class="text-[11px] font-mono text-neutral-400">STACK: LANGCHAIN, LLAMAINDEX, FAISS, CLIP, QWEN</span>
-            <button onclick="event.stopPropagation(); bookSpecificService('RAG Systems');" class="text-xs font-bold underline hover:text-neutral-600">INQUIRE ↗</button>
+            <span class="text-[11px] font-mono text-neutral-400">STACK: PYTHON, LANGCHAIN, FAISS, HUGGING FACE</span>
+            <button onclick="event.stopPropagation(); bookSpecificService('RAG Systems');" class="text-xs font-bold underline hover:text-neutral-600">VIEW FOCUS ↗</button>
           </div>
         </div>
       </div>
@@ -644,8 +654,8 @@
             Containerizing AI models with Docker, orchestrating training pipelines on Microsoft Azure, and building automated CI/CD workflows for robust machine learning deployments.
           </p>
           <div class="flex items-center justify-between border-t border-neutral-800 pt-3">
-            <span class="text-[11px] font-mono text-neutral-400">STACK: DOCKER, MICROSOFT AZURE, PYTHON, SQL</span>
-            <button onclick="event.stopPropagation(); bookSpecificService('MLOps & Cloud');" class="text-xs font-bold underline text-white hover:text-neutral-300">INQUIRE ↗</button>
+            <span class="text-[11px] font-mono text-neutral-400">STACK: PYTHON, DOCKER, AZURE, PYTORCH</span>
+            <button onclick="event.stopPropagation(); bookSpecificService('MLOps & Cloud');" class="text-xs font-bold underline text-white hover:text-neutral-300">VIEW FOCUS ↗</button>
           </div>
         </div>
       </div>
@@ -677,7 +687,7 @@
 
       <div class="w-full pt-8 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between text-[10px] tracking-widest uppercase text-neutral-600 font-semibold gap-4">
         <div>SHLOK NANDWANA &bull; ALL RIGHTS RESERVED</div>
-        <div>AI/ML &amp; FULL STACK ENGINEERING</div>
+        <div>AI/ML ENGINEERING</div>
       </div>
     </div>
   </footer>
@@ -716,12 +726,12 @@
           <input type="email" id="contact-email" required placeholder="john@company.com" class="w-full px-4 py-2.5 rounded-xl border border-neutral-300 focus:outline-none focus:border-black text-sm">
         </div>
         <div>
-          <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1">Service Required</label>
+          <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1">Role / Project Area</label>
           <select id="contact-service" class="w-full px-4 py-2.5 rounded-xl border border-neutral-300 focus:outline-none focus:border-black text-sm bg-white">
             <option value="Computer Vision">Computer Vision</option>
             <option value="RAG Systems">RAG Systems & LLMs</option>
             <option value="MLOps & Cloud">MLOps & Cloud Infrastructure</option>
-            <option value="Other">Other / Full Project</option>
+            <option value="Other">Other AI/ML area</option>
           </select>
         </div>
         <div>
@@ -754,7 +764,7 @@
         description: 'Multimodal platform for PDF ingestion and retrieval, resolving slow manual search across enterprise documents containing both text and images.',
         deliverables: ['LangChain & LlamaIndex Integration', 'CLIP Embeddings & FAISS Vector Search', 'Multimodal Text & Visual Content Retrieval', '35% Search Latency Reduction'],
         tools: ['LangChain', 'LlamaIndex', 'CLIP', 'FAISS', 'Python'],
-        stats: 'Scaled ingestion to 500+ pages with 50% faster information discovery.'
+        stats: 'Reduced search latency by 35% through multimodal retrieval.'
       }
     };
 
@@ -903,7 +913,7 @@
       const name = document.getElementById('contact-name').value;
       const service = document.getElementById('contact-service').value;
       closeContactModal();
-      showToast(`Thank you, ${name}! Your inquiry for "${service}" has been received.`);
+      showToast(`Thank you, ${name}! Your message about "${service}" has been received.`);
       document.getElementById('contact-form').reset();
     }
 
@@ -986,17 +996,17 @@
         id: 'retinopathy',
         title: 'Diabetic Retinopathy Detection',
         subtitle: 'Project Lead & Computer Vision',
-        description: 'Tackled slow manual screening by automating 5-class diabetic retinopathy severity grading from retinal images on the APTOS 2019 dataset using a hybrid Swin Transformer, EfficientNet-B4, and ResNet50 ensemble.',
-        src: 'assets/project_solargraph.png',
-        tools: ['PyTorch', 'Swin Transformer', 'EfficientNet', 'OpenCV'],
+        description: 'Automated 5-class diabetic retinopathy severity grading on the APTOS 2019 dataset using a hybrid Swin Transformer, EfficientNet-B4, and ResNet50 ensemble.',
+        src: 'assets/solar_app_bg.png',
+        tools: ['PyTorch', 'Swin Transformer', 'EfficientNet-B4', 'ResNet50'],
         stats: 'Achieved 0.92 Quadratic Weighted Kappa (QWK) on APTOS 2019.'
       },
       {
         id: 'ragplatform',
         title: 'Enterprise Multi-Modal RAG Platform',
         subtitle: 'Project Lead & AI Architecture',
-        description: 'Engineered a multimodal platform for PDF ingestion and retrieval across text and visual content using LangChain, LlamaIndex, CLIP embeddings, and FAISS vector search.',
-        src: 'assets/project_furniture.png',
+        description: 'Engineered multimodal PDF ingestion and retrieval across text and visual content using LangChain, LlamaIndex, CLIP embeddings, and FAISS vector search.',
+        src: 'assets/about_media.jpg',
         tools: ['LangChain', 'LlamaIndex', 'CLIP', 'FAISS'],
         stats: 'Reduced search latency by 35% and sped up discovery by 50%.'
       }
